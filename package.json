@@ -1,0 +1,19 @@
+{
+  "name": "vuex-passport",
+  "version": "0.0.1",
+  "description": "Vuex module for using Laravel Passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/Vandcarlos/vuex-passport.git"
+  },
+  "author": "Vandcarlos Mouzinho Sandes Junior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vandcarlos/vuex-passport/issues"
+  },
+  "homepage": "https://github.com/Vandcarlos/vuex-passport#readme"
+}
