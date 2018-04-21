@@ -35,7 +35,7 @@ if you need intercept guarded routes you can import a RouteShielding, eg.:
     routes
   })
 
-  Router.beforeEach(RouteShielding.shield)
+  Router.beforeEach(RouteShielding())
 
   export default Router
 ```
@@ -87,12 +87,10 @@ export default [
 ```
 note: you will can add meta tag in parent or children
 
-finnaly if you need change the default login page for redirect or the index page if user access login page when has section you can change properties 'loginPage' and 'indexPage' on RouteShielding before attach in Router
+finnaly if you need change the default login page for redirect or the index page if user access login page when has section you can call a RouteShielding with the names for these pages
 
 ```
-RouteShielding.loginPage = 'foo'
-RouteShielding.indexPage = 'bar'
-Router.beforeEach(RouteShielding.shield)
+Router.beforeEach(RouteShielding('foo-login', 'bar-index'))
 ```
 
 IMPORTANT the RouteShielding use the property name of routes
